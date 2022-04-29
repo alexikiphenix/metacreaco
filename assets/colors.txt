@@ -1,0 +1,17 @@
+    /*
+        #3AB807
+        colors : 
+        #E1E2E6 (gris clair fond des textes principaux)
+        #4480A6 (couleur des textes sur fond vert)
+        rgba(0,142,160,1) (vert, fond des textes secondaire)
+        #ddd (couleur des textes sur fond vert)
+
+
+        black: rgb(46,46,46); 
+        black2 : rgb(46,46,46);
+        black3: #2e2e2e THE BEST
+        Orange 1: #F2811D;
+        Orange 2 : #e87c03 (not applied)
+        orange 3 : F2811D
+        color: #F2811D;    
+    */

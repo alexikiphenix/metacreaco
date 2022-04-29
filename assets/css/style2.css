@@ -1,0 +1,314 @@
+*{
+    box-sizing: border-box;
+    /*font-size: 90%;*/
+ }
+    
+    /*VERSION ACTUELLE 20200716_1625*/
+    
+    /*
+    #3AB807
+    colors : 
+    #E1E2E6 (gris clair fond des textes principaux)
+    #4480A6 (couleur des textes sur fond vert)
+    rgba(0,142,160,1) (vert, fond des textes secondaire)
+    #ddd (couleur des textes sur fond vert)
+    
+    */
+
+    
+body
+{
+    font-family: Helvetica, "Trebuchet MS", Arial, sans-serif;
+    font-weight: 100;
+    background-color: #F4F5F6;
+}
+
+.banner
+{    
+    background-image: url("../img/backgrounds/reaching_the_summit.jpg");   
+    background-size: cover;
+    color: #eee;
+}
+
+.banner a, .banner a:active, .banner a:visited
+{
+    text-decoration: none;
+    color: #eee;
+}
+
+.banner a:hover, nav > a:hover, .nav-connexions a:active, .nav-connexions a:hover
+{
+    text-decoration: underline;
+    color: rgb(163, 14, 14);
+}
+
+figure
+{
+    margin: 0;
+}
+
+.nav-connexions
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .3rem;
+    background-color: rgb(8, 8, 8);
+}
+
+.nav-connexions a, .nav-connexions figcaption
+{
+    text-decoration: none;
+    color: #eee;
+}
+
+
+.nav-categories, .nav-categories>ul
+{
+    display: flex;
+    justify-content: flex-end;    
+}
+
+.nav-categories>ul>li
+{
+    margin-right: .5rem;
+    list-style: none;
+}
+
+.banner-padding-t /* IN PX TO BE SURE SHOW ENOUGH OF THE BACKGROUND */
+{
+    padding-top: 130px;
+}
+
+.banner_padding_b
+{
+    padding-bottom: 130px;
+}
+
+.center-txt
+{
+    text-align: center;    
+}
+
+.date-time
+{
+    position: relative;
+    bottom: .5rem;
+    left: .3rem;  
+}
+
+h1
+{
+    margin: 3rem 3rem;
+    text-align: center;
+}
+
+article
+{
+    /*border: 3px solid red;*/
+}
+
+
+.persons-and-search-block /** GATHER ARTICLES(persons blocks) AND ASIDE(SEARCH block) **/
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 85%;
+    margin: auto;
+    background-color: lightgray;
+}
+
+/************************************************************************************************************/
+/***************************************** START BLOCK PERSON **********************************************/
+/***********************************************************************************************************/
+.items-block  /* INCLUDES ALL PERSON-BLOCKS WITH OPTIONS */
+{
+    width: 86%;    
+}
+
+[class|="person"] h3
+{/*    
+    width: 7rem;
+    height: 7rem;*/
+    margin-top: 0;
+    color: whitesmoke;
+    background-color: lightcoral; /* provisional */
+    background-color: black;
+
+}
+
+.person-block /* EACH BLOCK CONTAINS 1 PERSON : picture - text description - options buttons */
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1.8rem;
+    background-color: black;
+}
+
+.search-block 
+{
+    width: 20%;
+    /*border: .01rem solid green;*/
+}
+
+.person-txt-block
+{
+    width: 60%;    
+    background-color: whitesmoke;
+    /* owerflow: */
+}
+
+.person-img-block/*  .person-img-block :not(img)  NOT WORKING !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!    */
+{
+    display: block;
+    position: relative;
+    width: 20%;
+    min-height: 10rem;
+    max-height: 25rem;
+    text-align: center;
+    color: white;
+    background-color: black;
+    /*border: .01rem solid blue;*/
+}
+
+.person-img-block > a
+{
+    display: block;    
+    color: white;
+    text-decoration: none;
+}
+
+.person-img-block > a:hover
+{
+    color: darkred;
+}
+
+.nav-person-block
+{
+    width: 20%; 
+    margin: auto; 
+    padding-top: 1em;  
+    color: white;        
+}
+
+.nav-person-block a
+{
+    display: block;
+    width: 95%;
+    margin: auto;    
+    /*text-transform: uppercase; */
+    /*color: darkred;  /* lightcoral */
+    /*background-color: lightgray; */
+    color : white;
+    text-align: center;
+    text-decoration: none;
+    line-height: 1.7rem;    
+}
+
+
+.nav-person-block a:hover
+{
+    color: darkred;
+}
+
+
+
+.person-block > nav p
+{
+    width: 80%;
+    margin: auto;
+    border-bottom: .01rem solid white;    
+}
+
+.person-img-block .rank
+{
+    position: absolute;
+    width: 2rem;
+    line-height: 2rem;
+    font-size: .8rem;
+    text-align: center;
+    border-radius: 50%;
+    top: .5rem;
+    left: .5rem;
+    z-index: 75;
+    color:whitesmoke;
+    background-color: lightcoral;    /* lightcoral rgb(204, 43, 43) */
+}
+
+
+.person-img-block figure
+{
+    text-align: center;
+}
+
+.person-img-block img
+{
+    text-align: center;
+}
+
+.person-img-block img 
+{
+    width: 95%;
+}
+
+.person-img-block progress
+{
+    width: 100%;
+    text-align: center;    /* MUST CHECK IF IT WORKS */
+}
+
+/************************************************************************************************************/
+/******************************************* END BLOCK PERSON **********************************************/
+/***********************************************************************************************************/
+
+/************************************************************************************************************/
+/******************************************** START SEARCH BLOCK ********************************************/
+/***********************************************************************************************************/
+
+.search-block 
+{
+    width: 14%;
+}
+
+.search-form 
+{
+    width: 95%;
+    margin: auto;
+}
+
+.search-form h3, .search-form h4 
+{
+    text-align: center;
+}
+
+.search-form input, .search-form button 
+{
+    width: 100%;
+    margin-bottom: .5rem;
+}
+
+.search-form button  
+{
+    line-height: 1.8rem;
+    color: white;
+    background-color: black;
+}
+
+.search-form button:hover  
+{
+    line-height: 2rem;
+    color: darkred;
+    font-weight: bold;
+    background-color: black;
+}
+
+/* A ESSAYER
+input {
+    padding: 2px;
+    display: block;
+    width: calc(100% - 1em);
+  }
+FIN */

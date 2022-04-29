@@ -1,0 +1,107 @@
+*
+{
+    box-sizing: border-box;
+    text-align: center;
+}
+
+
+#tree_board
+{
+    margin: auto;
+    width: 90%;
+   /* border: 1px dashed red; */
+}
+
+.row_names
+{
+     display: flex;
+    justify-content: space-evenly;    
+}
+
+.row_branches
+{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.cols_8, .cols_4, .cols_2
+{
+    /*border: 1px dashed rgb(17, 1, 1);     TU PEUX ACTIVER LES BORDURES POUR VOIR */ 
+}
+
+.cols_8
+{
+    width: calc(100%/8);    
+}
+
+.cols_4
+{
+    width: calc(100%/4);
+}
+
+.cols_2
+{
+    width: calc(100%/2);
+}
+
+.cols_1
+{
+    width: 100%;
+}
+
+
+/*
+#tree_board div:nth-of-type(2n+1) {
+    color: red;
+  }*/
+
+.boxes_for_8, .boxes_for_4, .boxes_for_2
+{
+    height: 5rem;
+    margin: auto;
+    background-color: cornflowerblue;
+}
+
+.boxes_for_8
+{
+    width: 75%;   
+}
+
+.boxes_for_4
+{
+    width: 50%;
+}
+
+
+.boxes_for_2
+{
+    width: 50%;
+}
+
+.split_boxes_4
+{
+    width: calc(100%/4);
+}
+
+.split_boxes_2
+{
+    width: calc(100%/2);
+}
+
+.split_boxes_1
+{
+    width: 100%;
+}
+
+
+.tree_branches
+{
+    width: 50%;
+    height: 2rem;
+    margin: auto;
+    border-collapse: collapse;
+    border-left: 1px solid rgb(17, 1, 1);
+    border-right: 1px solid rgb(17, 1, 1);    
+}
+

@@ -1,0 +1,1274 @@
+*{
+    box-sizing: border-box;
+    /*word-wrap: break-all;*/
+    word-wrap: break-word;
+    /*font-size: 80%;*/
+ }
+    
+    /*VERSION ACTUELLE 20210222*/
+    
+    /*
+        #3AB807
+        colors : 
+        #E1E2E6 (gris clair fond des textes principaux)
+        #4480A6 (couleur des textes sur fond vert)
+        rgba(0,142,160,1) (vert, fond des textes secondaire)
+        #ddd (couleur des textes sur fond vert)
+
+
+        black: rgb(62, 62, 62); 
+        black2 : rgb("46", "46", "46");
+        black3: rgb(62, 62, 62) THE BEST
+        Orange 1: rgb(242, 129, 29);
+        Orange 2 : #e87c03 (not applied)
+        orange 3 : F2811D
+        color: rgb(242, 129, 29);    
+    */
+    
+body
+{
+    font-family: Helvetica, "Trebuchet MS", Arial, sans-serif;
+    font-weight: 100;   
+    line-height: 1.5;
+    background-color: rgba(223, 228, 234, .92); /* #dfe4ea  #F4F5F6; */   
+}
+
+i
+{
+    font-size: 1rem;
+    margin-left: .3rem;
+    margin-right: .3rem;
+}
+
+.intro 
+{
+    display: flex;
+    width: 85%;
+    margin: 1rem auto 7rem;
+    padding: 1.5rem;
+    font-size: 100%;
+    color: rgb(62, 62, 62);
+    background-color: rgb(255,255,255);
+    /*border: .01rem solid black;*/
+}
+
+[class|=show]
+{
+    display: initial;
+}
+
+[class|=hide]
+{
+    display: none;
+}
+
+
+[class|=explanations]
+{
+    padding: 0;
+}
+
+.explanations-article 
+{
+    width: 70%;
+}
+
+.explanations-aside
+{
+    width: 30%;
+}
+
+.explanations-img
+{
+    width: 100%;
+}
+
+figure
+{
+    margin: 0;
+}
+
+.full-width 
+{
+    width: 100%;    
+}
+
+h4 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 100;
+}
+
+[class*=big]
+{
+    font-size: 150%;
+}
+
+
+.margin-b-big 
+{
+    margin-bottom: 3rem;
+}
+
+.padding-medium 
+{
+    padding: 0 1rem;
+}
+
+.inline-block 
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.stick-to-block
+{
+    margin: .1rem auto .1rem;
+    text-align: center;
+}
+
+h1
+{
+    margin: 3rem 3rem;
+    text-align: center;
+}
+
+.main-title 
+{
+    margin: 5rem auto 6rem;
+    text-align: center;    
+    font-size: 2.5rem;   
+}
+
+.title-with-sub 
+{
+    margin-bottom: .5rem;    
+}
+
+.sub-title
+{
+    margin: 0 auto 3.5rem;  
+    text-align: center;  
+}
+
+li 
+{
+    list-style-position: inside;
+    list-style-type: none;
+    /*list-style-type:symbols();*/
+}
+
+a
+{
+    color:rgb(62, 62, 62);
+}
+
+a:hover
+{
+    color: rgb(242, 129, 29);   
+}
+
+
+textarea 
+{
+    width: 95%;
+    text-align: left;    
+    border: .1rem solid rgb(62, 62, 62); 
+    border-radius: .5rem;
+    background-color: rgba(223, 228, 234, .92);
+}
+
+
+
+.input-checkbox2 {
+    position: absolute;
+    left: -9999px;
+  }
+
+.input-checkbox2:checked + label {
+/* nos styles */
+}
+
+.input-radio 
+{
+    margin-right: .1rem;
+    transform : scale(1.5); 
+}
+
+.input-radio:hover
+{
+    transform : scale(1.8); 
+}
+
+
+.label-radio
+{
+    margin-right: .8rem;
+}
+
+.input-checkbox 
+{
+    /*display: inline-block;*/
+    margin-right: .5rem;
+    transform : scale(2); 
+    cursor: pointer;
+    background-color: rgb(62, 62, 62);    
+}
+
+.input-checkbox:hover {
+    transform : scale(2.2); 
+}
+
+.stick-together /* gather verticaly 2 elements or more together */
+{
+    margin: .1rem auto .1rem;
+    /*text-align: center;*/
+}
+
+
+fieldset {
+    margin: 0 auto 5rem;
+    padding: 1.9rem;
+    width: 85%;
+    background-color: rgb(255,255,255);
+    border-radius: .5rem;
+}
+
+legend 
+{
+    margin: auto;
+    padding: .5rem 2rem .5rem;   
+    border: .01rem solid rgb(62, 62, 62);
+    border-radius: 2.5rem;    
+    color: rgb(242, 129, 29); 
+    background-color: rgb(62, 62, 62);
+}
+
+
+[class|=enhanced_button] 
+{     
+    display: block;
+    min-height: 3rem;    
+    margin: auto;
+    padding-left: 1.8rem;
+    padding-right: 1.8rem;
+    text-decoration: none;
+    text-align: center;
+    color: rgb(255,255,255); 
+    background-color: rgb(62, 62, 62);       
+    border: .1rem solid rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.enhanced_button-a, .enhanced_button-a:visited
+{
+    display: inline-block;
+    line-height: 3rem;
+    color: rgb(255, 255, 255); 
+}
+
+[class|=enhanced_button]:hover {
+    color: rgb(62, 62, 62); 
+    text-decoration: none;
+    background-color: rgb(242, 129, 29); 
+    border: .1rem solid rgb(62, 62, 62);
+    /*font-weight: bold;  */  
+}
+
+.enhanced_button-2 {     
+    border-radius: 2.5rem;
+    color: rgb(242, 129, 29); 
+}
+
+/*
+input, button 
+{
+    width: 100%;
+    margin-bottom: .8rem;
+}
+*/
+
+input 
+{
+    /*margin-bottom: 2rem; */
+    border: .1rem solid rgb(62, 62, 62);  
+    color: rgb(255, 255, 255);
+    color: rgb(62, 62, 62);
+    background-color: rgba(223, 228, 234, .92);   
+}  
+
+input:hover, input:active
+{
+    color: rgb(242, 129, 29);
+    background-color: rgb(62, 62, 62);    
+}  
+
+.alert 
+{    
+    color: rgb(242, 129, 29);
+}
+
+/*
+.search-form button, .add-button 
+{
+    line-height: 3rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    text-align: center;
+    color: rgb(242, 129, 29); 
+    background-color: rgb(62, 62, 62);       
+    border: none;
+    cursor: pointer;  
+}
+*/
+
+.field 
+{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.field p
+{
+    width: 50%;
+    padding-bottom: 3rem;/*
+    border-bottom: .1rem solid rgb(242, 129, 29);
+    border-bottom: .1rem solid rgb(62, 62, 62);*/
+}
+
+.field-name 
+{
+    display: block;
+    margin-bottom: .2rem;
+}
+
+.column {
+    display: flex;
+    justify-content: space-around;
+}
+
+.center-txt {
+    text-align: center;
+}
+
+.centering-block {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+ }
+
+ .centered-block {
+    display: block;
+    margin: auto;
+ }
+
+ fieldset, .intro, .item-block, .items-and-search-block /** GATHER ARTICLES(items blocks) AND ASIDE(SEARCH block) **/
+ {
+    box-shadow: 1rem 1rem .4rem rgba(0, 0, 0, 0.25);
+ }
+
+ fieldset {
+     border: none;
+ }
+/*******************************************************************************************************************************/
+/*********************************************************** START BANNER ******************************************************/
+/*******************************************************************************************************************************/
+
+.banner
+{    
+    background-image: url("../img/backgrounds/reaching_the_summit3.jpg");   
+    background-size: cover;
+    color: #eee;
+}
+
+.banner a, .banner a:active, .banner a:visited
+{
+    text-decoration: none;
+    color: #eee;
+}
+
+.banner a:hover, nav > a:hover, .nav-connexions a:active, .nav-connexions a:hover
+{
+    text-decoration: underline;
+    color: rgb(242, 129, 29);
+}
+
+.banner-title 
+{
+    text-shadow:.1rem .1rem rgb(8, 8, 8);
+}
+
+.banner-padding-t /* IN PX TO BE SURE SHOW ENOUGH OF THE BACKGROUND ACCORDING TO BG SIZE */
+{
+    padding-top: 225px;
+}
+
+.banner_padding_b
+{
+    padding-bottom: 130px;
+}
+
+.nav-connexions
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .3rem;
+    background-color: rgb(8, 8, 8);
+}
+
+.nav-connexions a, .nav-connexions figcaption
+{
+    text-decoration: none;
+    color: #eee;
+}
+
+.nav-categories, .nav-categories>ul
+{
+    display: flex;
+    justify-content: flex-end;    
+}
+
+.nav-categories>ul>li
+{
+    margin-right: .5rem;
+    list-style: none;
+}
+
+.nav-categories a:hover
+{
+    color: rgb(62, 62, 62);
+}
+
+.date-time
+{
+    position: relative;
+    bottom: .5rem;
+    left: .3rem;  
+}
+
+/*******************************************************************************************************************************/
+/*********************************************************** END BANNER ********************************************************/
+/*******************************************************************************************************************************/
+
+
+/*
+ul li:before 
+{
+    content: "\2023";
+}
+*/
+
+.icon-in-link
+{
+    margin: 0;
+}
+
+.contrib_n_risk 
+{
+    display: flex;
+    justify-content: space-around; 
+    margin: 2rem auto 1rem;  
+}   
+
+.contrib_n_risk > ul >li
+{        
+    color: #000;
+    font-weight: bold;
+    text-decoration: underline;
+    /*background-image: url("../img/backgrounds/bg_black_2.jpg");*/
+}
+
+.items-and-search-block /** GATHER ARTICLES(items blocks) AND ASIDE(SEARCH block) **/
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 85%;
+    margin: 1rem auto 4rem;  
+    background-color: #ffffff;  /* !!! MUST BE THE SAME COLOR OF THE BODY BG : IN PRACTICE IT CHANGES THE COLOR OF THE SEARCH BLOCK (item-BLOCK IS OVERWRITTEN° */    
+}
+
+
+/*******************************************************************************************************************************/
+/********************** START BLOCK ITEMS LIST VIEW (item can be a list_persons_view, a list_stories_view, etc...) ***********************/
+/*******************************************************************************************************************************/
+
+
+.list-view   /***** INCLUDES ALL items blocks and their nav ******/
+{
+    width: 83%;  
+    background-color: rgba(223, 228, 234, .92);  
+}
+
+.search-block 
+{
+    width: 17%;
+    /*border: .01rem solid green;*/
+}
+
+
+.list-view > article
+{
+    margin-bottom: 5rem;
+}
+
+section.list-view article:last-of-type    /*************************** MUST BE CORRECTED ***********************************/
+{
+    margin-bottom: 0;
+}
+
+[class|="item"] h2
+{    
+    margin-top: 0;
+    color: #d2d2d2;
+    background-color: rgb(62, 62, 62);
+}
+
+.item-block /* EACH BLOCK CONTAINS 1 item : picture/text description/nav  */
+{
+    width: 97%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    border: .1rem solid rgb(255, 255, 255);
+}
+
+
+/**************************************** START block image *************************************/
+
+.item-img-block
+{
+    display: block;
+    position: relative;
+    width: 20%;    
+    overflow-y: hidden; 
+    text-align: center;
+    color: rgb(255, 255, 255);    
+    background-color: rgb(62, 62, 62);  
+    /*border: .1rem solid rgb(255, 255, 255); */
+}
+
+.item-img-block a, .item-img-block a:visited
+{
+    display: block;    
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.item-img-block > a:hover
+{
+    color: rgb(242, 129, 29);
+}
+
+
+.item-img-block .rank
+{
+    position: absolute;
+    width: 2rem;
+    line-height: 2rem;
+    font-size: .8rem;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 50%;
+    top: .8rem;
+    left: .8rem;
+    z-index: 75;
+    color:#ffffff;
+    background-color: rgb(242, 129, 29);    
+    background-color: rgb(242, 129, 29);
+}
+
+
+.item-img-block figure
+{
+    text-align: left;
+}
+
+.item-img-block img, .item-img-block figcaption 
+{
+    text-align: center;
+}
+
+.item-img-block .item-img 
+{
+    object-fit: contain;
+    width: 100%; 
+    max-height: 40rem;   
+}
+
+.item-img-block figcaption 
+{
+    /*max-width: 90%;*/
+    /*height: 1.2rem;*/
+    /*text-align: center;*/
+    /*white-space: nowrap;*/ /****************************************** voir word-wrap **************************************/
+    /*text-overflow: ellipsis;*/
+    padding-left: .6rem;
+    padding-right: .6rem;
+    font-size: .8rem;
+    overflow: hidden;
+}
+
+.item-img-block progress
+{
+    width: 90%;
+    text-align: center;  
+}
+
+
+[class|="jauge"]
+{
+    height: 100%;    
+    font-size: .8rem;
+}
+
+/*
+.jauge
+{
+    position: relative;
+    width: 90%;  
+    height: 1.1rem;
+    margin: .5rem auto .5rem;  
+    text-align: center;
+    line-height: 1.1rem;
+    color: rgb(62, 62, 62);
+    background-color: #ffffff;
+    border: .02rem solid #ffffff;  
+    border-radius: .1rem;              
+}
+
+.jauge-value 
+{
+    position: absolute;
+    height: 1rem;
+    top: 0;
+    left: 0;
+    background-color: rgba(242,94,61,1);
+    background-color: rgb(242, 129, 29);
+   
+}
+
+.jauge-txt 
+{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    color: rgb(62, 62, 62);    
+}
+*/
+
+.jauge, .jauge-user
+{
+    position: relative;
+    width: 90%;
+    height: 1.2rem;
+    line-height: 1.2rem;
+    margin: 1rem auto 1rem; 
+    overflow: hidden;    
+    background-color: rgb(255,255,255);
+    border: .01rem solid rgb(255,255,255);  
+    border-radius: .1rem;              
+}
+
+.jauge-user 
+{
+    margin: 0rem auto .5rem;
+}
+
+.jauge-value 
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: .1rem;
+    background-color: rgb(242, 129, 29);
+}
+
+.jauge-txt 
+{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    color: black;
+}
+
+.jauge_title
+{
+    margin: 1rem auto 0rem;
+}
+
+/********************************************* END block image *********************************************/
+
+
+/****************************************** START text block ***********************************************/
+
+.item-txt-block
+{
+    position: relative;
+    width: 68%;    
+    /*margin: auto;*/
+    min-height: 24.5rem;    
+    /*min-height: 25rem;*/
+    padding: 1.5rem 1.5rem 2.5rem;  /* IMPORTANT BECAUSE THE NAV BELOW IS IN ABSOLUTE AND HAS 2REM HEIGHT */
+    font-size: 80%;
+    background-color: #ffffff;
+    /* owerflow: hidden*/
+}
+
+.item-txt-block h3 
+{
+    margin-top: 0;
+    font-size: 100%;
+    margin-top: 0;
+}
+
+.item-txt-block > div, .item-txt-block h3, 
+.item-txt-block h4, .item-txt-block p
+{ /*
+    padding-left: .8rem;
+    padding-right: .8rem;    */
+}
+
+.item-txt-block p:last-of-type, .link-add a
+{
+    line-height: 2rem;
+    text-align: center;
+    /*padding-bottom: 2rem; */
+}
+
+.item-txt-block h3
+{
+    font-size: 1.2rem;
+}
+
+.item-txt-block p:not(last-of-type)
+{
+    line-height: 1.5rem;
+    text-align: justify;
+}
+
+/*
+.item-txt-block ul, .item-txt-block li 
+{
+    padding: 0;
+}
+*/
+
+.item-txt-block ul
+{
+    padding-left: 0;
+}
+
+.item-txt-block li
+{
+  /*list-style-type: square;*/
+  margin-left: 0;
+  padding-left: .5rem; 
+  /*border: .01rem solid black;*/
+}      
+
+/*
+.item-txt-block ul:before
+{
+  content: " ";  
+}  
+*/
+
+ .link-add
+{
+    position: absolute;
+    width: 100%;
+    height: 2rem;
+    bottom: 0;
+    line-height: 2rem;
+    font-size: 1rem;
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 0;
+    left: 0;
+    color: #ffffff;
+    /*font-weight: bold;*/
+    background-color: rgb(62, 62, 62);
+    background-color: rgb(242, 129, 29);
+}
+
+.link-add a
+{
+    margin-right: 1rem;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.link-add a:hover, .link-add i:hover 
+{
+    color: rgb(62, 62, 62);
+    background-color: rgb(242, 129, 29);
+}
+
+.link-add i
+{
+    margin-right: 0.2rem;
+}
+
+/********************************************* END text block ***********************************************/
+
+
+/********************************** START nav block (inside list-view block)  ***********************************/
+
+.nav-item-block
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+    width: 12%; 
+    padding: 1rem .9rem 1rem .9rem;
+    font-size: .8rem;
+    color: #d2d2d2;       
+    background-color: rgb(62, 62, 62);     
+    /*border: .1rem solid rgb(255, 255, 255); */ 
+}
+
+.nav-item-block a
+{
+    display: block;
+    width: 100%;
+    margin: auto;    
+    color: rgb(255, 255, 255);
+    text-align: left;
+    text-decoration: none;
+    line-height: 1.7rem;    
+}
+
+.nav-item-block a:hover
+{
+    color: rgb(62, 62, 62);
+    color: rgb(242, 129, 29);
+}
+
+
+
+.item-block > nav p {
+    width: 95%;    
+   /* margin: 1rem .9rem 1rem .9rem;  
+    /*border-bottom: .01rem solid #ffffff; */
+    /* border-bottom: .01rem solid rgb(242, 129, 29); */
+}
+
+
+
+/************************** END nav block (inside item block)  *********************************************/
+
+
+
+
+/*******************************************************************************************************************************/
+/*********************************** END BLOCK item (item can be a person, a story, etc...) ************************************/
+/*******************************************************************************************************************************/
+
+/******************************************************************************************************************************/
+/*************************************************** START SEARCH BLOCK *******************************************************/
+/******************************************************************************************************************************/
+
+
+
+/*
+.search-form h3
+{
+    color: rgb(242, 129, 29);
+    background-color: black;
+}*/
+
+.search-block h2, .search-block h3
+{
+    text-align: center;
+}
+
+.search-block a, .item-main-aside a
+{      
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    max-width: 90%;
+    color: rgb(62, 62, 62);
+    text-decoration: none;
+    font-size: 80%;
+}
+
+.search-block a:hover, .item-main-aside a:hover
+{    
+    background-color: rgb(62, 62, 62);
+    color: #d2d2d2;
+}
+
+.search-block figure, .item-main-aside figure 
+{        
+    max-width: 90%;
+    font-size: 80%;
+    word-wrap: break-word;
+}
+
+
+.search-block img, .item-main-aside img
+{
+    width: 25%;
+}
+
+.search-block figcaption, .item-main-aside figcaption 
+{
+    width: 75%;
+    padding: .1rem .3rem .1rem
+}
+
+.search-form 
+{
+    width: 90%;
+    margin: auto;
+}
+
+
+/*
+.search-block figcaption:hover 
+{
+   width: 72%;
+}
+
+.search-form h3, .search-form h4 
+{
+    text-align: center;
+}
+*/
+
+.search-form label 
+{
+    /* border-bottom: .02rem solid rgb(62, 62, 62); */
+    text-decoration: none;
+}
+
+
+.search-form input, .search-form button 
+{
+    width: 100%;
+    margin-bottom: .8rem;
+}
+
+
+.search-form input 
+{
+    border-style: none;   
+}  
+
+/*
+.search-form input:hover, .search-form input:active
+{
+    color: rgb(242, 129, 29);
+    background-color: rgb(62, 62, 62);    
+}  
+
+*/
+
+
+
+
+
+.search-p 
+{
+    width: 90%;
+}
+
+.search-img 
+{
+    object-fit: contain;
+}
+
+
+/******************************************************************************************************************************/
+/*************************************************** END SEARCH BLOCK *******************************************************/
+/******************************************************************************************************************************/
+
+
+/******************************************************* PAGINATION *************************************************************/
+nav.pagination {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 1.5rem auto 1.5rem;    
+}
+
+[class|=page]
+{
+    display: block;
+    margin-left: .5rem;
+    margin-right: .5rem;
+    width: 1.8rem;
+    height: 1.8rem;
+    line-height: 1.8rem;
+}
+
+nav.pagination .page 
+{
+    color: rgb(242, 129, 29);
+    background-color: rgb(62, 62, 62);
+    text-decoration: none;
+    /*color: rgb(242, 129, 29);*/
+    /*color: rgb(255, 255, 255);*/
+    /* padding: 1.8rem;*/
+}
+
+nav.pagination a:hover, .page-selected
+{
+    text-decoration: none;
+    color: rgb(62, 62, 62);
+    background-color: rgb(242, 129, 29);
+}
+
+/* .a-pagination */
+.a-pagination 
+{/*
+    text-decoration: none;
+    color: rgb(242, 129, 29);
+    background-color: rgb(62, 62, 62);*/
+}
+
+
+
+/************************************** END PAGINATION ********************************************/
+
+/************************************************ footer *********************************************************/
+
+#main-footer {
+    margin: 5rem 1rem;
+}
+
+.copyright {
+    font-size: larger;    
+}
+
+.copyright i
+{
+    margin-right: .1rem;    
+}
+
+/************************************************  END FOOTER *****************************************************/
+
+
+
+/*******************************************************************************************************************************/
+/********************** START BLOCK DETAIL_VIEW item (item can be a persons_view, etc... ***********************************/
+/*******************************************************************************************************************************/
+
+[class|=detail-view]
+{
+   line-height: 1.3rem;
+}
+
+.detail-view-block
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 80%;    
+    margin: 1rem auto 4rem;
+}
+
+.detail-view-block .item-block
+{
+    width: 100%;
+}
+
+.detail-view .nav-item-block
+{
+    max-width: 90%;
+}
+
+.detail-view-txt-block
+{
+    width: 70%;    
+    color: rgb(62, 62, 62);
+    border: .1rem dashed blue;
+}
+
+.detail-view-img-block
+{
+    width: 30%;
+    border: .1rem dashed yellow;
+}
+
+.detail-view-img-block .item-img
+{
+    width: 100%;
+    max-height: 60rem;
+}
+
+.detail-view-description-block
+{
+    width: 100%;
+    border: .1rem dashed green;
+}
+
+.detail-view-txt-block h2, .detail-view-txt-block h3
+{
+    margin-top: 0;
+    line-height: 2rem;
+    padding-left: .8rem;
+    color: rgb(255,255,255);
+    background-color: rgb(242, 129, 29);
+}
+
+/*
+black: rgb(62, 62, 62); 
+black2 : rgb(62, 62, 62);
+black3: rgb(62, 62, 62) THE BEST
+Orange 1: rgb(242, 129, 29);
+Orange 2 : #e87c03 (not applied)
+orange 3 : rgb(242, 129, 29);
+color: rgb(242, 129, 29);    
+*/
+
+/*******************************************************************************************************************************/
+/********************** END BLOCK DETAIL_VIEW item (item can be a persons_view, etc... ***********************************/
+/*******************************************************************************************************************************/
+
+/*******************************************************************************************************************************/
+/********************** START BLOCK ADD ITEM VIEM (item can be a person_view, etc... ***********************************/
+/*******************************************************************************************************************************/
+
+.add-form label:not(.label-radio):not(.label-checkbox)
+{
+    display: flex;
+}
+
+.label-radio 
+{
+    display: inline-block;
+}
+
+.add-form input:not(.input-radio):not(.input-checkbox) 
+{
+    width: 97%;
+}
+
+.field input
+{
+    line-height: 1.8;
+    border-radius: .3rem;
+}
+
+.add-form .side-txt
+{
+    display: block;
+    width: 97%;
+}
+
+/********************************************* END ADD ITEM VIEW **************************************************************/
+
+/*******************************************************************************************************************************/
+/********************** START BLOCK EDIT ITEM VIEM (item can be a person_view, etc... ***********************************/
+/*******************************************************************************************************************************/
+
+.edit-form label:not(.label-radio):not(.label-checkbox) 
+{
+    display: flex;
+}
+
+.edit-form input:not(.input-radio):not(.input-checkbox) 
+{
+    width: 97%;
+}
+
+.edit-form-img 
+{
+    max-width: 95%;
+}
+
+
+/************************************************** END BLOCK EDIT ITEM VIEW ***************************************************/
+
+/*******************************************************************************************************************************/
+/********************** START EDIT CONTRIBUTION AND LIST RISK VIEW (item can be a person_view, etc... ******************************************/
+/*******************************************************************************************************************************/
+
+[class|=contrib_n_risk_view] i:not(.alert)
+{
+    color: rgb(8, 8, 8);
+}
+
+.contrib_n_risk-edit-view
+{
+    width: 70%;
+    text-align: left;
+}
+
+.contrib_n_risk-edit-view label, 
+.contrib_n_risk-edit-view input  
+{
+    display: inline-block;
+    width: 100%;
+}
+
+.contrib_n_risk_view-col1
+{
+    width: 87%;
+}
+
+.contrib_n_risk_view-col2
+{
+    width: 10%;
+}
+
+.contrib_n_risk_view-col3
+{
+    width: 3%;
+}
+
+
+/********************** END EDIT CONTRIBUTION AND LIST RISK VIEW (item can be a person_view, etc... ******************************************/
+
+/*******************************************************************************************************************************/
+/*********************************************** START DASHBOARD VIEW **********************************************************/
+/*******************************************************************************************************************************/
+
+.item-and-list-block 
+{    
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 85%;
+    margin: 1rem auto 4rem;  
+}
+
+.item-main-aside
+{
+    /*margin-top: 1rem;*/
+}
+
+/***************************************************** END DASHBOARD VIEW ******************************************************/
+
+
+/*******************************************************************************************************************************/
+/******************************************************** LOGIN VIEW ***********************************************************/
+/*******************************************************************************************************************************/
+
+.simple-form 
+{
+    text-align: center;
+}
+
+
+.simple-form label, .simple-form input
+{
+    display: inline-block;
+    width: 60%;
+}
+
+
+/* A ESSAYER
+input {
+    padding: 2px;
+    display: block;
+    width: calc(100% - 1em);
+  }
+FIN */
