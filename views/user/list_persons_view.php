@@ -24,7 +24,7 @@
 				</div>					
 					<a href="index.php?class=person&action=show&person=<?= $p->getId() ?>">
 					<figure>
-						<img alt="<?= $p->getName() ?>" src="<?= $p->getImage() ?>">
+						<img class="item-img" alt="<?= $p->getName() ?>" src="<?= $p->getImage() ?>">
 						<figcaption>
 							<?php $fullName = Tools::showIf($p->getAka()," | ").''.$p->getFirstname().' '.strtoupper($p->getName()); ?>   
 							<?= substr($fullName, 0, 40) ?> 
