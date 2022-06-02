@@ -12,14 +12,20 @@ class AdminController extends AbstractController{
             "persons" => Person::listWithLimit(0, 20)
         ]);*/
 
-        $id = 1;
-        if(User::getById($id) instanceof User)
+        
+        if(!empty($_SESSION['user']) && $session->isLogged())
         {
-            $this->renderView("admin/dashboard_view", [
-                "user" => User::getById($id),
-                "persons" => Person::listWithLimit(0, 20)
-            ]);
+            $id = $_SESSION['user']['id'];
+            if(User::getById($id) instanceof User)
+            {
+                $this->renderView("admin/dashboard_view", [
+                    "user" => User::getById($id),
+                    "persons" => Person::listWithLimit(0, 20)
+                ]);
+            }
         }
+        else
+            (new DefaultController())->index();
     }
 
     public function logout()

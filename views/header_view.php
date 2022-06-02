@@ -51,7 +51,7 @@
             <ul>
                 <!-- <li><a href="index.php">accueil</a></li> -->
                 <?php foreach($categories_header as $c): ?>
-                        <li><a href="index.php?class=person&action=<?= $c->getMethod() ?>#title"><?= $c->getName() ?></a></li>
+                        <li><a href="index.php?class=person&action=<?= $c->getMethod() ?>"><?= $c->getName() ?></a></li>
                 <?php endforeach ?>
                 <!-- <li><a href="contact.php">contact</a></li> -->
             </ul>

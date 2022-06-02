@@ -9,6 +9,7 @@ class Session
         }
     }
 
+
     /**
      * @param User $user
      * @return void

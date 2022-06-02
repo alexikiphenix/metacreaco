@@ -8,15 +8,17 @@ class PersonController extends AbstractController{
     */
     public function index(): void
     {
-        $session = new Session();
+        $session = (new Session());
+        //$session = $_SESSION["user"];
+        
         if(!empty($_SESSION['user']) && $session->isLogged())
-        {
-            $total = Person::count();
+        {     
+             $total = Person::count();        
             if(!empty($_GET["limit"])
                 && is_numeric($_GET["limit"])
                 && is_numeric($_GET["offset"])
             )
-            {
+            {               
                 $limit = $_GET["limit"];
                 $offset = $_GET["offset"];                
                 $this->renderView(''.$_SESSION["user"]["role"].'/list_persons_view', [
@@ -27,12 +29,16 @@ class PersonController extends AbstractController{
             }
             else
             {
-                $this->renderView("user/list_persons_view", [
+                $this->renderView(''.$_SESSION["user"]["role"].'/list_persons_view', [
                     "persons" => Person::listWithLimit(0, 25),
                     "total" => $total,
                     "pagination" => Tools::paginate($total, 25) 
                 ]);
             }
+        }
+        else
+        {
+            (new DefaultController())->index();
         }
     }
 
